@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8-bit prototype</title>
+    <link rel="stylesheet" href="css/Website%20css.css">
+
+
+</head>
+<body>
+<div class="content">
+
+</div>
+<!--<-------Popout---------->
+
+<!-- Trigger/Open The Modal -->
+<!--<button id="myBtn">Open Modal</button>-->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2 style = "font-family: vcr_osd_monoregular,sans-serif; font-size: 40px; ">Welcome</h2>
+        </div>
+        <p style = "font-family: vcr_osd_monoregular,sans-serif; font-size: 24px; color:White "> Survive the night is a 2D game based around the idea of a monochromatic Gameboy game( different shades of green).Within survive the night the player will have a choice of three different levels cemetery, castle and standard arena. The aim for the player is to survive for  as long they can through different rounds with difficulty increasing as rounds increase, with different types of enemies and attacks.
+        </p>
+
+        <P style = "font-family: vcr_osd_monoregular,sans-serif; font-size: 24px; color:White ">
+            I want the game to have a retro style theme, that makes the gamer feel nostalgic with the artistic style I am going for by matching the aesthetics of the original Gameboy games along with keeping the game at an 8-bit theme. The main reasoning on why the game is going to look the way it is, is because I have designed the game around the website first to get a rough idea of how I want it to look and feel. The reason behind the green monochrome colour scheme is due to the original Gameboy itself being limited too four different shades of green.
+        </P>
+
+        <P style = "font-family: vcr_osd_monoregular,sans-serif; font-size: 24px; color:White ">
+            Once you are ready to play the game just click outside of the modal/or click the "X". Then click the blue cartridge to play and enjoy the game.
+        </P>
+        <h1 style = "font-family: vcr_osd_monoregular,sans-serif; font-size: 30px; color:White ">
+            Controls:
+        </h1>
+        <P style = "font-family: vcr_osd_monoregular,sans-serif; font-size: 24px; color:White ">
+            W = Forward
+            A = Left
+            S = Backwards
+            D = Right
+            Space= Attack
+            Esc = menu
+        </P>
+    </div>
+
+</div>
+<!--<-------cartridges--------->
+
+<div class="box-wrap">
+    <div class="Cartridge_Green">
+        <form action =About%20Page.html>
+            <input class="Cartridge_Green" type="submit" value="">
+        </form>
+    </div>
+    <div class="Cartridge_Blue">
+        <form action =PlayGamePage.html>
+            <input class="Cartridge_Blue" type="submit" value="">
+        </form>
+    </div>
+    <!--<-------Gameboy--------->
+    <div class="gameboy_Empty">
+        <button class="Screenbtn" id="Screenbtn" style = "font-family: vcr_osd_monoregular,sans-serif;" >Press to turn on</button>
+    </div>
+    <!--<-------cartridges--------->
+    <div class="Cartridge_Red">
+        <form action = GamesDesignPage.html>
+            <input class="Cartridge_Red" type="submit" value="">
+        </form>
+    </div>
+    <div class="Cartridge_Yellow">
+        <form action = Contact.html>
+            <input class="Cartridge_Yellow" type="submit" value="">
+        </form>
+    </div>
+</div>
+<!--<-------Javascript--------->
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("Screenbtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+
+</script>
+</body>
+</html>
